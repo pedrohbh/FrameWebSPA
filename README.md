@@ -1,2 +1,2 @@
 # FrameWebSPA
-Adiciona o link do FrameWeb
+Adiciona o link da versão do FrameWeb SPA
