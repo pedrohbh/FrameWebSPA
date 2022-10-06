@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-{% if partialProperties.get("FrontControllerClass").getAttributes().getLenght() == 0 %}
+{% if partialProperties.get("FrontControllerClass").getAttributes().size == 0 %}
 export default function {{ partialProperties.get("partialName") }}(props) {
 {% else %}
 class {{ partialProperties.get("partialName") }} extends React.Component
