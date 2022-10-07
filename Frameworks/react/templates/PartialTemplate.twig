@@ -19,7 +19,7 @@ class {{ partialProperties.get("partialName") }} extends React.Component
 		{%- elseif attribute.Type.Name == "Integer" or attribute.Type.Name == "integer" or attribute.Type.Name == "Int" or attribute.Type.Name == "int" -%}{%- set atributoTipo = "0" -%}
 		{%- else -%}{%- set atributoTipo = "new " ~ attribute.Type.Name ~ "()" -%}{%- endif -%}
 		{{ attribute.Name }} : {{ atributoTipo }}{% if loop.last == false %}, {% endif %}
-		{%- if loop.last == true -%}}{% endif %}{% endfor %}		
+		{%- if loop.last == true -%}};{% endif %}{% endfor %}		
 	}
 {% endif %}
 	{% for method in partialProperties.get("methodsController") %}
